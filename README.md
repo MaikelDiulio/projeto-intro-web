@@ -27,7 +27,7 @@ A página consiste em um HTML, ligado a um ou mais arquivos CSS, e um ou mais ar
 
 ### Lista de requisitos
 
-- [ ]  Tela de listagem com título
+- []  Tela de listagem com título
 - [ ]  Cabeçalho na página
 - [ ]  Área principal com barra de pesquisa e botão
 - [ ]  Espaço para lista dos itens

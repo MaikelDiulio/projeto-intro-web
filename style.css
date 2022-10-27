@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+body {
+    min-height: 100vh;
+    background: black;
+}
+
+.banner {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.banner video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.principal,
+.fim {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 0 auto;
+
+}
+
+.principal .inicio {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 20.77vh;
+    font-family: 'Gemunu Libre', sans-serif;
+    font-size: 2em;
+    color: white;
+    background: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.7091211484593838) 9%, rgba(0, 0, 0, 0) 100%);
+}
+
+
+
+.procurar input {
+    width: 480px;
+    height: 3.5vh;
+    margin-top: 60px;
+    border-radius: 10px;
+    border: black;
+    background-color: rgb(43, 41, 41);
+}
+
+.procurar button {
+    background-color: rgba(25, 24, 24, 0.83);
+    border-radius: 6px;
+    color: rgb(225, 224, 224);
+    border: rgba(25, 24, 24, 0.83);
+    height: 3.5vh;
+    width: 12.5vh;
+}
+
+.listaDeCarros {
+    list-style: none;
+    align-self: center;
+    justify-content: left;
+    padding: 1vh;
+    font-size: 1em;
+    flex-wrap: wrap;
+}
+
+.principal .supra {
+    width: 60vw;
+    height: auto;
+    background: rgb(40, 40, 40);
+    background: linear-gradient(90deg, rgba(40, 40, 40, 1) 41%, rgba(40, 40, 40, 0.9192051820728291) 59%, rgba(40, 40, 40, 0.8855917366946778) 67%, rgba(40, 40, 40, 0.865983893557423) 69%, rgba(40, 40, 40, 0.8407738095238095) 70%, rgba(40, 40, 40, 0.8239670868347339) 71%, rgba(40, 40, 40, 0) 100%);
+    border-radius: 10px;
+    box-shadow: 0px 0px 7px black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    animation: alternate-reverse;
+}
+
+.principal .golf {
+    width: 60vw;
+    display: flex;
+    background: rgb(40, 40, 40);
+    background: linear-gradient(90deg, rgba(40, 40, 40, 1) 41%, rgba(40, 40, 40, 0.9192051820728291) 59%, rgba(40, 40, 40, 0.8855917366946778) 67%, rgba(40, 40, 40, 0.865983893557423) 69%, rgba(40, 40, 40, 0.8407738095238095) 70%, rgba(40, 40, 40, 0.8239670868347339) 71%, rgba(40, 40, 40, 0) 100%);
+    margin-top: 15vh;
+    border-radius: 10px;
+    box-shadow: 0px 0px 7px black;
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+
+}
+
+
+.principal .tesla {
+    width: 60vw;
+    height: auto;
+    display: flex;
+    background: rgb(40, 40, 40);
+    background: linear-gradient(90deg, rgba(40, 40, 40, 1) 41%, rgba(40, 40, 40, 0.9192051820728291) 59%, rgba(40, 40, 40, 0.8855917366946778) 67%, rgba(40, 40, 40, 0.865983893557423) 69%, rgba(40, 40, 40, 0.8407738095238095) 70%, rgba(40, 40, 40, 0.8239670868347339) 71%, rgba(40, 40, 40, 0) 100%);
+    margin-top: 15vh;
+    box-shadow: 0px 0px 7px black;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+
+
+}
+
+.imgTodosCarros {
+    border-radius: 4%;
+
+}
+
+li {
+    margin-left: 1rem;
+    text-transform: uppercase;
+    font-family: 'Kanit', sans-serif;
+    color: rgb(198, 198, 198);
+    font-size: 1.1em;
+
+}
+
+.fim {
+    background-color: rgb(62, 57, 57);
+
+}
+
+.fim .redes {
+    display: flex;
+    align-items: center;
+
+    flex-direction: column;
+    height: 20vh;
+
+}
+
+/* Para tablet */
+@media screen and (min-device-width: 481px) and (max-device-width:935px) {
+
+    #imgSupra {
+        width: 300px;
+        height: 222.97px;
+    }
+
+    .principal .supra {
+        height: 210;
+    }
+
+    #imgGolf {
+        width: 250px;
+        height: 220px;
+    }
+
+
+    #imgTesla {
+        width: 225px;
+        height: 240.97px;
+    }
+
+    li {
+        display: flex;
+        flex-direction: row;
+        font-size: 0.7rem;
+    }
+
+}
+
+
+/* Para cell */
+
+@media screen and (min-device-width: 320px) and (max-device-width:530px) {
+
+
+
+    article.supra {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    article.golf {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    article.tesla {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    #imgSupra {
+        width: 160px;
+        height: 160px;
+
+    }
+
+    #imgGolf {
+        width: 180px;
+        height: 160px;
+    }
+
+
+    #imgTesla {
+        width: 180px;
+        height: 160px;
+    }
+
+    li {
+        display: flex;
+        flex-direction: row;
+        font-size: 0.7rem;
+    }
+    
+   .procurar input{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60vw;
+    }
+
+    .principal .procurar{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+}

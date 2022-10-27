@@ -2,19 +2,19 @@
 
 // const nome1 = "SUPRA"
 // const marca1 ="TOYOTA"
-// const potencia1 = 330
+const potencia1 = 330
 // const eletrico1 = false
 // const motorizacao1 =["6 cilindros em linha", "turbo", "gasolina","441 Nm de torque"]
 
 // const nome2 = "GOLF R32"
 // const marca2 = "VOLKSWAGEN"
-// const potencia2 = 200
+const potencia2 = 200
 // const eletrico2 =false
 // const motorizacao2 =["V6", "turbo", "Gasolina", , "27kgfm de Torque" ]
 
 // const nome3 = "Model S"
 // const marca3 ="TESLA"
-// const potencia3 = 1034
+const potencia3 = 1034
 // const eletrico3 = true
 // const motorizacao3 =["3 motores, Ambos Eletricos", "145,2 kgfm de torque" ]
 
@@ -29,30 +29,38 @@
 
 //________________________________________SEMANA 2_________________________________________________________________
 
-// const carro1 = {
-//     nome: "SUPRA",
-//     marca:"TOYOTA",
-//     potencia1: 330,
-//     eletrico1: false,
-//     motorizacao:["6 cilindros em linha", "turbo", "gasolina","441 Nm de torque"]
-// }
+const carro1 = {
+    nome: "SUPRA",
+    marca:"TOYOTA",
+    potencia1: 330,
+    eletrico1: false,
+    motorizacao:["6 cilindros em linha", "turbo", "gasolina","441 Nm de torque"]
+}
 
-// const carro2 = { 
-//     nome: "GOLF R32",
-//     marca: "VOLKSWAGEN",
-//      potencia2:  200,
-//     eletrico2: false,
-//     motorizacao: ["V6", "turbo", "Gasolina", , "27kgfm de Torque" ]
-// }
+const carro2 = { 
+    nome: "GOLF R32",
+    marca: "VOLKSWAGEN",
+     potencia2:  200,
+    eletrico2: false,
+    motorizacao: ["V6", "turbo", "Gasolina", , "27kgfm de Torque" ]
+}
 
-// const carro3 = {
-//      nome: "Model S",
-//      marca:"TESLA",
-//      potencia3: 1034,
-//      eletrico3: true,
-//      motorizacao:["3 motores, Ambos Eletricos", "145,2 kgfm de torque" ]
+const carro3 = {
+     nome: "Model S",
+     marca:"TESLA",
+     potencia3: 1034,
+     eletrico3: true,
+     motorizacao:["3 motores, Ambos Eletricos", "145,2 kgfm de torque" ]
 
-// }
+}
+
+console.log(carro1)
+console.log(carro1)
+console.log(carro1)
+console.log(carro1.eletrico1)
+console.log(carro2.eletrico2)
+console.log(carro3.eletrico3)
+
 
 
 
@@ -187,7 +195,7 @@
 //          potencia3: 1034,
 //          eletrico3: true,
 //          motorizacao:["3 motores, Ambos Eletricos", "145,2 kgfm de torque" ]
-    
+
 //     }
 // ]
 
@@ -212,20 +220,38 @@
 
 //``````````````````````````````````````````````````````````````````````````````````````````````````````````````
 
+
+const media = ((potencia1+potencia2+potencia3)/3)
+console.log(`O valor da média de pontencia entre os carros é ${media}`)
+
+
+
+
 //DOM//
 
+function MeusCarros() {
+    let input = document.getElementById("pesquisa").value
+    input = input.toLowerCase();
+    let x = document.getElementsByClassName("pesquisaCarros");
 
-function todososatores(){
-  let input = document.getElementById('searchbar').value
-  input=input.toLowerCase();
-  let x = document.getElementsByClassName("todososatores");
-    
-  for (i = 0; i < x.length; i++) { 
-      if (!x[i].innerHTML.toLowerCase().includes(input)) {
-          x[i].style.display="none";
-      }
-      else {
-          x[i].style.display="block";                 
-      }
-  }
+    for (i = 0; i < x.length; i++) {
+        if (!x[i].innerHTML.toLowerCase().includes(input)) {
+            x[i].style.display = "none";
+        }
+        else {
+            
+
+            x[i].style.display = "block";
+            
+
+
+        } 
+
+
+    }
+
+    if(input === "") {
+         alert("Campo vazio😴 ")
+
+    }
 }

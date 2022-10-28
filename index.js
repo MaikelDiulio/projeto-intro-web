@@ -57,9 +57,6 @@ const carro3 = {
 console.log(carro1)
 console.log(carro1)
 console.log(carro1)
-console.log(carro1.eletrico1)
-console.log(carro2.eletrico2)
-console.log(carro3.eletrico3)
 
 
 
@@ -95,19 +92,20 @@ console.log(carro3.eletrico3)
 
 
 //````````````5* DA SEGUNDA SEMANA``````````//
-// if (carro1.eletrico1 && carro2.eletrico2 && carro3.eletrico3 === true){
-//    alert("Todos são ELETRICOS")
+if (carro1.eletrico1 && carro2.eletrico2 && carro3.eletrico3 === true){
+   console.log("Todos são ELETRICOS")
 
-//    if (carro3.eletrico3 === true){
-//     alert(`${carro3.nome}É ELÉTRICO`)
-//    }else{
-//     alert(`${carro3.nome} NÃO É ELÉTRICO`)
-//    }
-// } 
+   if (carro3.eletrico3 === true){
+    console.log(`${carro3.nome}É ELÉTRICO`)
+   }else{
+    console.log(`${carro3.nome} NÃO É ELÉTRICO`)
+   }
+} 
 
-// //else{
-//    alert("Nem todos são false")
-// } 
+else{
+   console.log("Nem todos são false")
+
+} 
 //``````````````````````````````````````````````````//
 
 

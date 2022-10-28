@@ -164,6 +164,11 @@ li {
 
 }
 
+    a.saibaMais{
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
+
 /* Para tablet */
 @media screen and (min-device-width: 481px) and (max-device-width:935px) {
 
